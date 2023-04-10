@@ -35,6 +35,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="../outputStyle.css">
     <title>Calculator Result</title>
     <style>
       body {
@@ -43,29 +44,6 @@
         color: #333;
         margin: 0;
         padding: 0;
-      }
-      
-      h1 {
-        text-align: center;
-        font-size: 36px;
-        margin-top: 50px;
-      }
-      
-      p {
-        text-align: center;
-        font-size: 24px;
-        margin-top: 30px;
-      }
-      
-      a {
-        display: block;
-        text-align: center;
-        margin-top: 50px;
-      }
-
-      .error {
-        color: red;
-        margin: 20px;
       }
       </style>
   </head>
