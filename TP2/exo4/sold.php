@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../outputStyle.css" />
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -13,6 +12,47 @@
         margin: 0;
         padding: 0;
       }
+      h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-top: 50px;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 50px auto;
+  font-size: 16px;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #4caf50;
+  color: white;
+}
+
+p {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 30px;
+}
+
+a {
+  display: block;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.error {
+  color: red;
+  margin: 20px;
+}
+
     </style>
     <title>Exo 4 - Results</title>
   </head>
