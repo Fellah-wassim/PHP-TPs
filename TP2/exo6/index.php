@@ -55,6 +55,7 @@
   <title>Exo 6</title>
 </head>
 <body>
+  
   <h1>Lottery</h1>
   <form method="post">
     <table>
@@ -72,13 +73,17 @@
     <input type="submit" name="submit" value="Submit">
     <input type="submit" name="reset" value="Reset">
   </form>
+
   <?php
     if (isset($_POST['submit'])) {
+
       $selectedNumbers = $_POST['numbers'];
       $numSelected = count($selectedNumbers);
+
       if ($numSelected != 6) {
         echo "Please select exactly 6 numbers";
       } else {
+
         $winningNumbers = array();
         while (count($winningNumbers) < 6) {
           $randomNumber = rand(1, 49);
@@ -99,12 +104,13 @@
         $winningMessage = "<p>The winning numbers are: " . implode(", ", $winningNumbers) ."</p>";
         $selectedMessage = "<p>You selected: " . implode(", ", $selectedNumbers) ."</p>";
         $numMatchesMessage = "Number of matches: $numMatches";
-        
+
         if (isset($_POST['reset'])) {
           unset($winningMessage);
           unset($selectedMessage);
           unset($numMatchesMessage);
         }
+        
         echo $winningMessage. $selectedMessage. $numMatchesMessage;
       }
     }
