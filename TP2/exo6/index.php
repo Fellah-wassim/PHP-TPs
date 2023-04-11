@@ -107,7 +107,6 @@
         }
         echo $winningMessage. $selectedMessage. $numMatchesMessage;
       }
-      
     }
   ?>
 </body>
