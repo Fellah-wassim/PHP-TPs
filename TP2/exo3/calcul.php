@@ -76,13 +76,13 @@
         else {
           echo "<table>";
           echo "<tr><th></th>";
-          for ($col = 1; $col <= $p; $col++) {
+          for ($col = $n; $col <= $p; $col++) {
             echo "<th>$col</th>";
           }
           echo "</tr>";
-          for ($row = 1; $row <= $n; $row++) {
+          for ($row = $n; $row <= $p; $row++) {
             echo "<tr><th>$row</th>";
-            for ($col = 1; $col <= $p; $col++) {
+            for ($col = $n; $col <= $p; $col++) {
               echo "<td>" . ($row * $col) . "</td>";
             }
             echo "</tr>";
