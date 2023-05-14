@@ -55,8 +55,7 @@
   </head>
   <body>
     <?php
-      if (isset($_GET['operand1']) && isset($_GET['operand2']) && isset($_GET['operator']) &&
-        !empty($_GET['operand1']) && !empty($_GET['operand2']) && !empty($_GET['operator'])) {
+      if (isset($_GET['operand1']) && isset($_GET['operand2']) && isset($_GET['operator'])) {
         
         $operand1 = $_GET['operand1'];
         $operand2 = $_GET['operand2'];
