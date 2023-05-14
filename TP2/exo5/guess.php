@@ -91,7 +91,7 @@
       session_start();
 
       function initGame() {
-        $_SESSION['number'] = rand(1, 10);
+        $_SESSION['number'] = rand(1, 1000);
         $_SESSION['tries'] = 0;
         $_SESSION['startTime']= microtime(true);
         $_SESSION['message'] = '';
@@ -125,7 +125,7 @@
           $_SESSION['date'] = date('Y-m-d H:i:s');
           $_SESSION['message'] = 'Congratulations, you guessed the right number! It took you ' . $_SESSION['tries'] . ' tries' . ' and '. $_SESSION['duration'] . ' seconds to guess the number.';
 
-          echo '<form method="post" action="gg.php">
+          echo '<form method="post" action="win.php">
             <label for="name">Please enter your name to save your score:</label>
             <input type="text" id="name" name="name">
             <button type="submit">Submit</button>
