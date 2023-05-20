@@ -122,7 +122,7 @@
     <?php
     
       function initGame() {
-        $_SESSION['number'] = rand(1, 10);
+        $_SESSION['number'] = rand(1, 1000);
         $_SESSION['tries'] = 0;
         $_SESSION['startTime']= microtime(true);
         $_SESSION['message'] = '';
@@ -192,6 +192,6 @@
         echo '</div>';
       initGame();
     ?>
-    <a href="guess.php">&#8592; Back</a>
+    <a href="index.php">&#8592; Back</a>
   </body>
 </html>
