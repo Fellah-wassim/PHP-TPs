@@ -105,7 +105,6 @@
       function calculateTime($endTime, $startTime) {
         return round(($endTime -  $startTime), 2);
       }
-      echo $_SESSION['number'];
       $guess = null;
 
       if (isset($_POST['guess'])) {
